@@ -8,7 +8,7 @@ import {DateRangePicker} from 'react-dates';
 
 import { DateRangePickerPhrases } from 'react-dates';
 import {DateRangePickerShape} from 'react-dates';
-import { START_DATE, END_DATE, HORIZONTAL_ORIENTATION, ANCHOR_LEFT } from 'react-dates';
+import { START_DATE, END_DATE, HORIZONTAL_ORIENTATION, ANCHOR_LEFT } from 'react-dates/constants';
 import {isInclusivelyAfterDay} from 'react-dates';
 
 const propTypes = {
