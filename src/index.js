@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
+import 'react-dates/lib/css/_datepicker.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
