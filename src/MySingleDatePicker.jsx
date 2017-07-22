@@ -14,7 +14,7 @@ class MySingleDatePicker extends React.Component {
 
     handleDateChanged(date) {
         this.setState({date: date});
-        this.props.onDateChange(this.state.date);
+        this.props.onDateChange(date);
     }
 
     render() {

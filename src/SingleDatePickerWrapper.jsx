@@ -85,7 +85,15 @@ class SingleDatePickerWrapper extends React.Component {
   }
 
   onDateChange(date) {
-    this.setState({ date });
+    this.setState(function(prevState,props) {
+      console.log(prevState.date);
+      console.log(date);
+      return {
+        date: date
+      }
+    });
+    console.log(this.state.date);
+    //this.setState({ date });
     this.props.dateChanged(date);
   }
 
