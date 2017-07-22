@@ -14,8 +14,7 @@ class SubmitButton extends React.Component {
     }
 
     handleClick() {
-        var date = new Date(this.props.date._d);
-        console.log(date);
+        console.log(this.props.date._d);
     }
 }
 
