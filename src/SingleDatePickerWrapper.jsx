@@ -15,6 +15,7 @@ const propTypes = {
   // example props for the demo
   autoFocus: PropTypes.bool,
   initialDate: momentPropTypes.momentObj,
+  dateChanged: PropTypes.func.isRequired,
 
   ...omit(SingleDatePickerShape, [
     'date',
@@ -85,6 +86,7 @@ class SingleDatePickerWrapper extends React.Component {
 
   onDateChange(date) {
     this.setState({ date });
+    this.props.dateChanged(date);
   }
 
   onFocusChange({ focused }) {
@@ -99,6 +101,7 @@ class SingleDatePickerWrapper extends React.Component {
     const props = omit(this.props, [
       'autoFocus',
       'initialDate',
+      'dateChanged'
     ]);
 
     return (
